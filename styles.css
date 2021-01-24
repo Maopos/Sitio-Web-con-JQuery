@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+body {
+   
+    background: url('/img/paisaje.jpg');
+    background-size: cover;
+    background-attachment: fixed
+}
+
+#global {
+    max-width: 80%;
+    background: #f7f7f7;
+    margin: 30px auto 10px;
+    padding: 20px;
+    box-shadow: 3px 3px #080f0f;    
+}
+
+h1 {
+    color: #ffffff;
+}
+
+#logo {
+    font-family: Helvetica, sans-serif;
+    font-size: 30px;    
+    background: #2660a4;
+    text-align: center;
+    width: 600px;
+    height: 80px;
+    margin-bottom: 20px;
+    line-height: 75px;    
+}
+
+#menu {
+    font-family: Helvetica, sans-serif;
+    margin-bottom: 20px;
+    background: #bea57d;
+    margin-bottom: 20px;
+}
+
+#menu ul {
+    line-height: 46px;  
+    
+}
+
+#menu ul li {
+   height: 46px; 
+   display: inline-block;
+   transition: all 300ms;
+   
+     
+}
+
+li:hover {
+    background: #eff2c0;
+    
+}
+
+#menu ul li a {
+    display: block;
+    color: #080f0f;
+    text-decoration: none;
+    padding: 0 30px;    
+}
+
+#post {
+    display: grid;
+    font-family: Arial, Helvetica, sans-serif;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas:    "articulo1 articulo1 sidebar"
+                            "articulo2 articulo2 sidebar";
+    grid-gap: 20px;
+}
+
+#post h2 {
+    font-size: 30px;
+    
+}
+
+#fecha{
+    color: rgb(148, 148, 148);
+    margin-bottom: 20px;
+}
+
+.post1 {
+    padding: 0 20px;
+    grid-area: articulo1;
+}
+
+.post2 {
+    padding: 0 20px;
+    grid-area: articulo2;
+}
+
+.leer_mas {
+    display: inline-block;
+    padding: 10px;
+    background: #eff2c0;
+    color: #3d2908;
+    text-decoration: none;
+    margin-top: 5px;
+    font-size: 14px;
+    
+    
+}
+
+#sidebar {
+    padding: 30px;
+    background: #CFD945;
+    grid-area: sidebar;
+    
+}
+
+p {
+    text-align: justify;
+    line-height: 20px;
+}
+
+
+
+footer {
+    display: flex;
+    max-width: 80%;
+    height: 100px;
+    background: #062952;
+    color: #ffffff;
+    margin: 0 auto 30px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    box-shadow: 3px 3px #080f0f;
+    font-weight: 500; 
+    align-items: flex-end;   
+}
