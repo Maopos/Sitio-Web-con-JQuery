@@ -6,7 +6,7 @@
 
 body {
    
-    background: url('/img/paisaje.jpg');
+    background: url('/img/fondo.jpg');
     background-size: cover;
     background-attachment: fixed
 }
@@ -16,7 +16,7 @@ body {
     background: #f7f7f7;
     margin: 30px auto 10px;
     padding: 20px;
-    box-shadow: 3px 3px #080f0f;    
+    box-shadow: 5px 5px 5px #080f0f;    
 }
 
 h1 {
@@ -25,13 +25,14 @@ h1 {
 
 #logo {
     font-family: Helvetica, sans-serif;
-    font-size: 30px;    
+    font-size: 23px;    
     background: #2660a4;
     text-align: center;
     width: 600px;
     height: 80px;
     margin-bottom: 20px;
-    line-height: 75px;    
+    line-height: 75px; 
+    box-shadow: 2px 2px 5px #080f0f;   
 }
 
 #menu {
@@ -39,6 +40,7 @@ h1 {
     margin-bottom: 20px;
     background: #bea57d;
     margin-bottom: 20px;
+    box-shadow: 2px 2px 5px #080f0f;
 }
 
 #menu ul {
@@ -66,17 +68,22 @@ li:hover {
     padding: 0 30px;    
 }
 
-#post {
+/* .bx-wrapper, .bx-viewport {
+    height: 100rem !important; -----Tamaño del Slider-----
+
+} */
+
+
+#content {
     display: grid;
     font-family: Arial, Helvetica, sans-serif;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-areas:    "articulo1 articulo1 sidebar"
-                            "articulo2 articulo2 sidebar";
+    grid-template-columns: 2fr 2fr 1fr;
+    grid-template-areas:    "articulo articulo sidebar";
     grid-gap: 20px;
 }
 
-#post h2 {
-    font-size: 30px;
+#articulos h2 {
+    font-size: 30px;  
     
 }
 
@@ -85,21 +92,17 @@ li:hover {
     margin-bottom: 20px;
 }
 
-.post1 {
-    padding: 0 20px;
-    grid-area: articulo1;
+#articulos{
+    grid-area: articulo;
 }
 
-.post2 {
-    padding: 0 20px;
-    grid-area: articulo2;
-}
+
 
 .leer_mas {
     display: inline-block;
     padding: 10px;
     background: #eff2c0;
-    color: #3d2908;
+    color: blue;
     text-decoration: none;
     margin-top: 5px;
     font-size: 14px;
@@ -108,10 +111,21 @@ li:hover {
 }
 
 #sidebar {
-    padding: 30px;
-    background: #CFD945;
+    padding: 20px;
+    background:  #7dbe8d;
     grid-area: sidebar;
+    font-family: Arial, Helvetica, sans-serif;
     
+}
+
+#sidebar h4 {
+    font-size: 20px;
+    padding:  20px 10px;
+}
+
+#sidebar p {
+    font-size: 13px;
+    line-height: normal;
 }
 
 p {
@@ -120,18 +134,47 @@ p {
 }
 
 
+#foto {
+    display: block;
+    margin: 10px auto 30px;
+    border-radius: 10px;
+    width: 12rem;
+    box-shadow: 4px 4px 20px #080f0f;
+}
+
+form input {
+    border-radius: 2px;
+    height: 15px;
+    padding: 5px;
+    border: 2px solid #ccc;
+    margin-bottom: 10px;
+    
+}
+
+#registrar {
+    padding: 6px 30px;
+    cursor: pointer;
+    height: 30px;
+    box-shadow: 2px 2px 2px black;
+    background: #bea57d;
+    font-weight: bold;
+    border: 2px solid #bea57d;
+}
+
+
 
 footer {
     display: flex;
     max-width: 80%;
     height: 100px;
-    background: #062952;
+    background: rgba(22, 108, 219, 0.9);
     color: #ffffff;
     margin: 0 auto 30px;
     padding: 20px;
     display: flex;
     justify-content: center;
-    box-shadow: 3px 3px #080f0f;
+    box-shadow: 5px 5px 5px #080f0f;
     font-weight: 500; 
-    align-items: flex-end;   
+    align-items: flex-end;  
+    font-family: Arial, Helvetica, sans-serif
 }

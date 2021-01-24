@@ -10,7 +10,24 @@
     <script src="/jquery-ui-1.12.1/jquery-ui.theme.min.css"></script>
     <script src="main.js"></script>
 
+    <!-- Slider jquery -- bxslider.com-->
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+
+  <!-- moment js cdn -->
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js" integrity="sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ==" crossorigin="anonymous"></script>
+
+<!--Idioma-->
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/locale/es.min.js" integrity="sha512-L6Trpj0Q/FiqDMOD0FQ0dCzE0qYT2TFpxkIpXRSWlyPvaLNkGEMRuXoz6MC5PrtcbXtgDLAAI4VFtPvfYZXEtg==" crossorigin="anonymous"></script>
+
+  <!--MI main.js-->
+
     <link rel="stylesheet" href="styles.css">
+
 </head>
 <body>
     <section id="global">
@@ -30,31 +47,54 @@
             </nav>
         </header>
 
-        <div id="slider">
+        
+            <div class="slider">
+                <div><img src="/img/diseñoweb1.jpg" alt="" title="Diseño Web"></div>
+                <div><img src="/img/mar.jpg" alt="" title="Pescador y mar"></div>
+                <div><img src="/img/paris-3193674_1280.jpg" alt="" title="Paris"></div>
+            </div>
+        
+        
 
-        </div>
+        
 
-        <div id="content">
-            <div id="post">
-                <article class="post1">
-                        <h2>Articulo número 001.</h2>
-                        <p id="fecha">Fecha de publicación. Enero 2021.</p>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus rem optio necessitatibus blanditiis facilis, vitae sit iste earum quaerat explicabo sint vel, odio porro autem alias nostrum numquam ipsam magni. Mollitia maxime optio ea atque necessitatibus quo beatae officia? Illo vero unde, reiciendis error excepturi, beatae assumenda iure dignissimos tempore non doloribus quibusdam ipsam, necessitatibus fuga earum ad consequuntur nesciunt soluta libero quia dolore itaque? Odit sed sint modi soluta deleniti neque, eum sit, quidem vero dicta animi dolorem consectetur!, optio ea atque necessitatibus quo beatae officia? Illo vero unde, reiciendis error excepturi, beatae assumenda iure dignissimos tempore non doloribus quibusdam ipsam, necessitatibus fuga earum ad consequuntur nesciunt soluta libero quia dolore itaque? Odit sed sint modi soluta deleniti neque, eum sit, quidem vero dicta animi dolorem consectetur!</p>
-                        <a href="#" class="leer_mas">Leer mas...</a>
-                </article> 
-                <article class="post2">
-                    <h2>Articulo número 002.</h2>
-                    <p id="fecha">Fecha de publicación. Enero 2021.</p>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus rem optio necessitatibus blanditiis facilis, vitae sit iste earum quaerat explicabo sint vel, odio porro autem alias nostrum numquam ipsam magni. Mollitia maxime optio ea atque necessitatibus quo beatae officia? Illo vero unde, reiciendis error excepturi, beatae assumenda iure dignissimos tempore non doloribus quibusdam ipsam, necessitatibus fuga earum ad consequuntur nesciunt soluta libero quia dolore itaque? Odit sed sint modi soluta deleniti neque, eum sit, quidem vero dicta animi dolorem consectetur!</p>
-                    <a href="#" class="leer_mas">Leer mas...</a>
-            </article> 
+            <div id="content">
+
+                <div id="articulos">
+
+                </div>                         
+
                 <div id="sidebar">
-                    <h3>Sidebar</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, iure atque? Unde distinctio error quam sapiente blanditiis necessitatibus, officia, iste recusandae ipsum eius natus. Consectetur similique ratione fugit sequi. Libero.</p>
+                   
+                        <div id="about">
+                            <h4>Quien soy?</h4>
+                            <img id="foto" src="/img/maopos.jpg" alt="Maopos">
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem atque asperiores nihil quaerat velit vel molestiae, quam.</p>
+                        </div>
+
+                        <div>
+                            <h4>Registrate</h4>
+                            <form action="">
+                                <label for="name">Nombre</label>
+                                <input type="text" placeholder="Escribe tu nombre.">                        
+
+                                <label for="email">Email</label>
+                                <input type="text" placeholder="Escribe tu Email.">
+
+                                <label for="password">Password</label>
+                                <input type="password" placeholder="Escribe tu password.">
+
+                                <br><br>
+
+                                <input id="registrar" type="submit" value="Registrar">
+                            </form>
+                        </div>
+
                 </div>
+
             </div>
            
-        </div>
+        
     </section>
 
     <footer>
