@@ -54,9 +54,37 @@
 
           $('#articulos').append(post);
       });
-        
-        
-        
+
+
+      // Selector de Dark Theme
+
+      var tema = $('#dark');
+
+      $('#temaL').click(function () {
+
+        tema.removeAttr('href')     
+
+      })   
+      
+      $('#temaD').click(function () {
+
+        tema.attr('href', 'dark.css')     
+
+      })  
+      
+      
+      // Scroll pagina arriba
+
+      $('#subir').click(function (e) {
+
+        e.preventDefault();
+
+        $('html, body').animate({
+          scrollTop: 0,
+        }, 1000);
+
+        return false;
+      })
 
     });
   

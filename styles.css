@@ -12,7 +12,7 @@ body {
 }
 
 #global {
-    max-width: 80%;
+    width: 80%;
     background: #f7f7f7;
     margin: 30px auto 10px;
     padding: 20px;
@@ -28,7 +28,7 @@ h1 {
     font-size: 23px;    
     background: #2660a4;
     text-align: center;
-    width: 600px;
+    max-width: 80%;
     height: 80px;
     margin-bottom: 20px;
     line-height: 75px; 
@@ -87,8 +87,8 @@ li:hover {
     
 }
 
-#fecha{
-    color: rgb(148, 148, 148);
+#fecha {
+    color: #ccc !important;
     margin-bottom: 20px;
 }
 
@@ -163,18 +163,68 @@ form input {
 
 
 
-footer {
-    display: flex;
-    max-width: 80%;
+.footer {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    width: 80%;
     height: 100px;
+    padding: 10px;
     background: rgba(22, 108, 219, 0.9);
-    color: #ffffff;
-    margin: 0 auto 30px;
-    padding: 20px;
-    display: flex;
-    justify-content: center;
+    color: #ffffff;    
     box-shadow: 5px 5px 5px #080f0f;
-    font-weight: 500; 
-    align-items: flex-end;  
-    font-family: Arial, Helvetica, sans-serif
+    font-weight: 500;     
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 10px auto 30px;
 }
+
+
+
+.subir {
+    color: white;
+    display: grid;
+    grid-row: 1/2;
+    justify-items: right;
+    align-items: center;
+    margin-right: 40px; 
+       
+}
+
+#subir {
+    color: white;
+    
+    font-size: large;
+}
+
+.copy {
+    display: grid;
+    grid-row: 2/3;
+    justify-items: center;
+    align-items: end;
+}
+
+#temaD {
+    background: #1d1f1d;
+    padding: 5px 10px;
+    color: #ccc;
+    font-size: medium;
+    cursor: pointer; 
+    margin-left: 0px;
+    border-radius: 10px; 
+    
+}   
+
+#temaL {
+    background:rgba(22, 108, 219, 0.9);
+    padding: 5px 10px;
+    color: #fff;
+    font-size: medium;
+    cursor: pointer;
+    border-radius: 10px;  
+}   
+
+#botones {
+   
+    float: right;
+    margin-right: 20px;
+}
+

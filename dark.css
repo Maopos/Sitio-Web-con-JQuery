@@ -1,0 +1,108 @@
+body {
+   
+    background: url('/img/dark.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    
+}
+
+#global {
+    
+    background: #141414;
+    
+}
+
+h1 {
+    color: #c7fcee;
+}
+
+h2 {
+    color: #B6F6E5;
+}
+
+p {
+    color: #B8CDF8;
+}
+
+#fecha {
+    color: #38423C !important;
+}
+
+#logo {
+      
+    background: #6B6897;
+    
+}
+
+#menu {
+    
+    background: #212921;
+    
+}
+
+li:hover {
+    background: #38423C;
+    
+}
+
+#menu ul li a {
+   
+    color: #BDF7E7;
+     
+}
+
+
+#fecha{
+    color: rgb(99, 87, 87);
+   
+}
+
+
+.leer_mas {
+   
+    background: #9D8DF1;
+    color: #141414;
+    
+    
+}
+
+#sidebar {
+    
+    background:  #9D8DF1;
+        
+}
+
+#sidebar p {
+    color: #141414;
+}
+
+#sidebar h4 {
+    color: #141414;
+}
+
+
+form input {
+    background: rgb(220, 222, 223);
+    border: 2px solid #38423C;
+    
+    
+    
+}
+
+
+
+#registrar {
+    
+    background: #BDF7E7;
+    font-weight: bold;
+    border: 2px solid #141414;
+}
+
+
+
+footer {
+    
+    background: #6B6897;
+    color: #B6F6E5;
+   
+}

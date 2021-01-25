@@ -8,13 +8,13 @@
     <script src="/jquery-ui-1.12.1/jquery-ui.min.js"></script>
     <script src="/jquery-ui-1.12.1/jquery-ui.structure.min.css"></script>
     <script src="/jquery-ui-1.12.1/jquery-ui.theme.min.css"></script>
-    <script src="main.js"></script>
+    
 
     <!-- Slider jquery -- bxslider.com-->
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
 
   <!-- moment js cdn -->
 
@@ -26,7 +26,12 @@
 
   <!--MI main.js-->
 
+  <script src="main.js"></script>
+
+  <!--Estilos css-->
+
     <link rel="stylesheet" href="styles.css">
+    <link id="dark" rel="stylesheet" href="dark.css">
 
 </head>
 <body>
@@ -42,6 +47,11 @@
                     <li><a href="#">Reloj</a></li>
                     <li><a href="#">Contacto</a></li>
                     <li><a href="#">Sobre mi</a></li>
+
+                    <div id="botones">
+                        <button id="temaD">Dark</button>
+                        <button id="temaL">Light</button>
+                    </div>
                     
                 </ul>
             </nav>
@@ -97,9 +107,14 @@
         
     </section>
 
-    <footer>
-        Copyright 2021 || maoposites.com
-    </footer>
+    
+        <div class="footer">
+            <div class="subir"> <a id="subir" href="#" >Ir arriba.</a></div>
+            <div class="copy"> Copyright 2021 || maoposites.com</div>
+        </div>
+       
+       
+    
     
 </body>
 </html>
