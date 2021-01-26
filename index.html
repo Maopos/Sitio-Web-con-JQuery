@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sitio Web</title>
-    <script src="jquery-3.5.1.min.js"></script>
-    <script src="/jquery-ui-1.12.1/jquery-ui.min.js"></script>
-    <script src="/jquery-ui-1.12.1/jquery-ui.structure.min.css"></script>
-    <script src="/jquery-ui-1.12.1/jquery-ui.theme.min.css"></script>
+    <script src="/js/jquery-3.5.1.min.js"></script>
+    <script src="/js/jquery-ui-1.12.1/jquery-ui.min.js"></script>
+    <script src="/js/jquery-ui-1.12.1/jquery-ui.structure.min.css"></script>
+    <script src="/js/jquery-ui-1.12.1/jquery-ui.theme.min.css"></script>
     
 
     <!-- Slider jquery -- bxslider.com-->
@@ -16,7 +16,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
 
-  <!-- moment js cdn -->
+  <!-- moment js cdn fechas -->
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js" integrity="sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ==" crossorigin="anonymous"></script>
 
@@ -26,7 +26,8 @@
 
   <!--MI main.js-->
 
-  <script src="main.js"></script>
+  <script src="/js/main.js"></script>
+  <script src="/js/dark.js"></script>
 
   <!--Estilos css-->
 
@@ -36,26 +37,28 @@
 </head>
 <body>
     <section id="global">
-        <header>
-            <div id="logo">
-                <h1>Sitio Web con JQuery.</h1>
-                
-            </div>
-            <nav id="menu">
-                <ul>
-                    <li><a href="#">Inicio</a></li>
-                    <li><a href="#">Reloj</a></li>
-                    <li><a href="#">Contacto</a></li>
-                    <li><a href="#">Sobre mi</a></li>
+            <header>
 
-                    <div id="botones">
-                        <button id="temaD">Dark</button>
-                        <button id="temaL">Light</button>
-                    </div>
-                    
-                </ul>
-            </nav>
-        </header>
+                <div id="logo">
+                    <h1>Sitio Web con JQuery.</h1>                    
+                </div>
+
+                <p id="bienvenido"></p>
+
+                    <nav id="menu">
+                        <ul>
+                            <li><a href="index.html">Inicio</a></li>
+                            <li><a href="#">Reloj</a></li>
+                            <li><a href="about.html">Sobre mi</a></li>
+                            <li><a href="#">Contacto</a></li>
+
+                            <div id="botones">
+                                <button id="temaD">Dark</button>
+                                <button id="temaL">Light</button>
+                            </div>                            
+                        </ul>
+                    </nav>
+            </header>
 
         
             <div class="slider">
@@ -82,21 +85,23 @@
                             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem atque asperiores nihil quaerat velit vel molestiae, quam.</p>
                         </div>
 
-                        <div>
+                        <div id="login">
                             <h4>Registrate</h4>
                             <form action="">
                                 <label for="name">Nombre</label>
-                                <input type="text" placeholder="Escribe tu nombre.">                        
+                                <input id="name" type="text" placeholder="Escribe tu nombre.">                        
 
                                 <label for="email">Email</label>
-                                <input type="text" placeholder="Escribe tu Email.">
+                                <input id="email" type="text" placeholder="Escribe tu Email.">
 
                                 <label for="password">Password</label>
-                                <input type="password" placeholder="Escribe tu password.">
+                                <input id="password" type="password" placeholder="Escribe tu password.">
 
                                 <br><br>
 
                                 <input id="registrar" type="submit" value="Registrar">
+
+
                             </form>
                         </div>
 

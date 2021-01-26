@@ -9,6 +9,8 @@
           
       });
 
+      
+
       //Post
 
       var posts = [
@@ -56,21 +58,7 @@
       });
 
 
-      // Selector de Dark Theme
-
-      var tema = $('#dark');
-
-      $('#temaL').click(function () {
-
-        tema.removeAttr('href')     
-
-      })   
       
-      $('#temaD').click(function () {
-
-        tema.attr('href', 'dark.css')     
-
-      })  
       
       
       // Scroll pagina arriba
@@ -85,6 +73,32 @@
 
         return false;
       })
+
+      // Login con local storage
+
+      $('#login form').submit(function () {
+        var name = $('#name').val();
+        localStorage.setItem('user_name', name);
+      });
+
+      var name = localStorage.getItem('user_name');
+
+      if (name != null && name != 'undefined') {
+
+        var bienvenida = $('#bienvenido');
+
+        bienvenida.html('Bienvenido, ' + name + '. <br><br>'); 
+
+        bienvenida.append('<a href="#" id="logout">Salir</a>')
+
+        $('#login').hide(); // Ocultar form        
+
+      }
+
+      $('#logout').click(function () {
+        localStorage.clear();
+        location.reload();
+        });
 
     });
   
