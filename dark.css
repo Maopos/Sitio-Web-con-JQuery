@@ -1,6 +1,6 @@
 body {
    
-    background: url('/img/dark.jpg');
+    background:linear-gradient(rgb(0, 0, 0), #01011d);
     background-size: cover;
     background-attachment: fixed;
     
@@ -20,7 +20,17 @@ h2 {
     color: #B6F6E5;
 }
 
+#h2about {
+    color: #B6F6E5;
+}
 
+#aboutMe h3{
+    color:blanchedalmond;
+}
+
+.ui-widget-content {
+    background: #212921;
+}
 
 p {
     color: #B8CDF8;
@@ -67,6 +77,12 @@ li:hover {
     
     
 }
+
+#contact {
+    color: rgb(170, 104, 233);
+}
+
+
 
 #sidebar {
     

@@ -25,6 +25,7 @@ h1 {
 }
 
 #h2about {
+    color: honeydew;
     font-size: 28px;
     margin-left: 50px;
 
@@ -125,18 +126,7 @@ li:hover {
     grid-area: articulo;
 }
 
-#accord {
-    margin-top: 10px;
-}
 
-#aboutMe {
-    grid-area: articulo;
-}
-
-#aboutMe h3{
-cursor: pointer;
-color: #60aa72;
-}
 
 
 
@@ -151,6 +141,45 @@ color: #60aa72;
     
     
 }
+
+/*---------------Sobre mi---------------------*/
+
+#accord {
+    margin-top: 10px;
+    
+}
+
+#aboutMe {
+    grid-area: articulo;
+}
+
+#aboutMe h3{
+cursor: pointer;
+color: #60aa72;
+}
+
+/*----------Reloj-----------*/
+
+
+#reloj {
+    grid-area: articulo;
+    color: cornflowerblue;
+    font-size: x-large;
+    font-weight: 700;
+}
+
+/*--------------Contact*---------------------*/
+
+#enviar {
+    
+    padding: 15px 30px;
+    line-height: 0px;
+    
+}
+
+
+/*----------Sidebar-----------*/
+
 
 #sidebar {
     padding: 20px;

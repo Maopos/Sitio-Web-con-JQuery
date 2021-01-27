@@ -3,20 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sobre mi.</title>
+    <title>Contacto</title>
     <script src="/js/jquery-3.5.1.min.js"></script>
     <script src="/js/jquery-ui-1.11.4.custom/jquery-ui.min.js"></script>
    
     <link rel="stylesheet" href="/js/jquery-ui-1.11.4.custom/jquery-ui.structure.min.css">
     <link rel="stylesheet" href="/js/jquery-ui-1.11.4.custom/jquery-ui.theme.min.css">
     
+     <!-- moment js cdn fechas -->
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js" integrity="sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ==" crossorigin="anonymous"></script>
+
+  <!--moment - Idioma-->
+  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/locale/es.min.js" integrity="sha512-L6Trpj0Q/FiqDMOD0FQ0dCzE0qYT2TFpxkIpXRSWlyPvaLNkGEMRuXoz6MC5PrtcbXtgDLAAI4VFtPvfYZXEtg==" crossorigin="anonymous"></script>
+  
+  
+    <!--Validacion de formularios-->
+
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.0/jquery.validate.min.js"></script>
 
    <!--MI main.js-->
 
-   <script src="/js/dark.js"></script>
-   <script src="/js/sobreMi.js"></script>
-   
-
+ <script src="/js/dark.js"></script>
+  <script src="validacion.js"></script>
 
   <!--Estilos css-->
     <link rel="stylesheet" href="/js/jquery-ui-1.11.4.custom/jquery-ui.min.css">
@@ -29,7 +40,7 @@
             <header>
 
                 <div id="logo">
-                    <h2 id="h2about">Sobre mi.</h2>                    
+                    <h2 id="h2about">Contacto.</h2>                    
                 </div>
                 
                 <p id="bienvenido"></p>
@@ -54,28 +65,34 @@
 
             <div id="content">
 
-                <div id="aboutMe">
-                    <!--Acordeon-->
+                <div id="contact">
+                    <h2>Mis datos.</h2><br><br>
+                    <form id="formulario" action="" method="POST">
+                        <label for="nameData">Nombre</label><br>
+                        <input type="text" name="nameData"><br>
 
-                    <h2>Mauricio Posada.</h2>
+                        <label for="lastNameData">Apellido</label><br>
+                        <input type="text" name="lastNameData"><br>
 
-                    <div id="accord">
-                        <h3>Presentación.</h3>
-                        <div>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio consequatur ipsam recusandae aut perferendis reprehenderit, alias soluta, iusto, maiores quae facere optio numquam fugiat. Optio beatae eius est iste, id quos ipsam mollitia excepturi maxime? Atque maxime modi harum perferendis laboriosam rerum, consequuntur perspiciatis cum. Ut distinctio repellat quidem temporibus?</p>
-                        </div>
-                        <h3>Skills.</h3>
-                        <div>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio consequatur ipsam recusandae aut perferendis reprehenderit, alias soluta, iusto, maiores quae facere optio numquam fugiat. Optio beatae eius est iste, id quos ipsam mollitia excepturi maxime? Atque maxime modi harum perferendis laboriosam rerum, consequuntur perspiciatis cum. Ut distinctio repellat quidem temporibus?</p>
-                        </div>
-                        <h3>Soft Skills.</h3>
-                        <div>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio consequatur ipsam recusandae aut perferendis reprehenderit, alias soluta, iusto, maiores quae facere optio numquam fugiat. Optio beatae eius est iste, id quos ipsam mollitia excepturi maxime? Atque maxime modi harum perferendis laboriosam rerum, consequuntur perspiciatis cum. Ut distinctio repellat quidem temporibus?</p>
-                        </div>
-                    </div>
+                        <label for="emailData">Email</label><br>
+                        <input type="email" name="email"><br>
 
+                        <label for="sexData">Sexo</label><br>
+                        <select name="sexData" id="">br
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                        </select><br><br>
 
-                </div>                         
+                        <label for="">Fecha de Nacimiento</label><br>
+                        <input type="text" name="dateData"><br>
+
+                        <label for="dateData">Edad</label><br>
+                        <input type="number" name="ageData"><br>
+
+                        <input id="enviar" type="submit" value="Registrar">
+                    </form>
+                </div> 
+
 
                 <div id="sidebar">
                    
@@ -84,7 +101,6 @@
                             <img id="foto" src="/img/maopos.jpg" alt="Maopos">
                             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem atque asperiores nihil quaerat velit vel molestiae, quam.</p>
                         </div>
-
                         
                 </div>
 
