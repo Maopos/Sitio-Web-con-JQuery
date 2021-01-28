@@ -1,10 +1,10 @@
-$(document).ready(function() { //https://jqueryvalidation.org/documentation/
+$(document).ready(function() { 
     
     $('form input[name="dateData"]').datepicker({ //Calendario
         dateFormat: 'dd MM yy'
     });
     
-    $("#formulario").validate({
+    $("#formulario").validate({ //https://jqueryvalidation.org/documentation/
       rules: {
         nameData : {
           required: true,
@@ -31,5 +31,10 @@ $(document).ready(function() { //https://jqueryvalidation.org/documentation/
           email: true
         }
       }
+    });
+
+    $('#enviar_a').submit(function () {
+      var savedd = $('#nameData').val();
+      localStorage.setItem('name_data', savedd);
     });
   });
